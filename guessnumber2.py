@@ -4,6 +4,7 @@ exit = 0
 while exit == 0:
   print ("This is the number guessing game")
   print ("The number is between 0 and 100.")
+  print ("You have only 10 tries, don't fuck up. Good Luck!")
  
   number = random.randint(0,100)
   tries = 0
