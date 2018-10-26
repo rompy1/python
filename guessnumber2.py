@@ -1,25 +1,34 @@
 import random
+
 exit = 0
 while exit == 0:
-  print("Welcome to the number guessing game!")
-  print("The object of the game is to guess my number.")
-  print("The number will be between 1 and 100.")
-  guess = -5
+  print ("This is the number guessing game")
+  print ("The number is between 0 and 100.")
+ 
   number = random.randint(0,100)
   tries = 0
   endgame = 0
   while endgame == 0:
     tries += 1
-    guess = int(input("Guess a number!"))
+    guess = int(input("GUESS NUMBER:"))
     if guess > number:
-      print("My number is smaller than that!")
+        print ("The number is smaller.")
     elif guess < number:
-      print("My number is bigger than that!")
+        print ("The number is larger.")
+    elif tries == 1: 
+        print ("Holy Shit man")
+        print (f"You have guessed this in {tries} try")
+    elif tries < 4:
+        print ("Damn you're good")
+        print (f"You have guessed this in {tries} tries")
+    elif tries < 8:
+        print ("You are Average.")
+        print (f"You have guessed this in {tries} tries")
     else:
-      print(f"You guessed my number in {tries} attempts!")
-      endgame = 1
-    if tries >= 10:
-      print("I'm sorry, you ran out of tries! Game Over.")
+        print (f"You have guessed this in {tries} tries")
+        print ("Suprisingly, you don't suck.")
+        endgame = 1
+    if tries > 10:
+        print ("You ran out of attempts. You suck!") 
   input("Press enter to play again.")
   print("\n")
-  
