@@ -1,7 +1,7 @@
 import random 
-    
+#https://howsecureismypassword.net/
 x = 0
-chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890~!@#$%&*'
+chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%&*'
 y = 0
 lenght = input("How many characters?\n")
 length = int(lenght)
@@ -19,7 +19,3 @@ while x == 0:
     elif letter == "length":
         length = input ("How many characters?\n")
         length = int(length)
-
-   
-
-    
