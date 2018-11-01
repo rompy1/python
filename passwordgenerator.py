@@ -3,8 +3,7 @@ import random
 x = 0
 chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%&*'
 y = 0
-lenght = input("How many characters?\n")
-length = int(lenght)
+length = int(input("How many characters?\n"))
 name = "exit"
 while x == 0:
     password =  ''
