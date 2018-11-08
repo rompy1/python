@@ -10,11 +10,15 @@ while x == 0:
     x=1
   print (ls)
 list2 = ls
-bracketA = [0,0]
-bracketB = [0,0]
-bracketC = [0,0]
-bracketD = [0,0]
-brackets = [bracketA, bracketB, bracketC, bracketD]
+bracketA = ["buy","buy"]
+bracketB = ["buy","buy"]
+bracketC = ["buy","buy"]
+bracketD = ["buy","buy"]
+bracketE = ["buy","buy"]
+bracketF = ["buy","buy"]
+bracketG = ["buy","buy"]
+bracketH = ["buy","buy"]
+brackets = [bracketA, bracketB, bracketC, bracketD, bracketE, bracketF, bracketG, bracketH]
 
 for item in brackets:
   x = 0
@@ -27,6 +31,13 @@ for item in brackets:
       x += 1
   except ValueError:
     break
+x = 0
+print(brackets)
+for item in brackets:
+  print(len(brackets))
+  print(item)
+  if item[0] == "buy" and item[1] == "buy":
+    brackets.pop(x)
+  x += 1
 print (brackets)
-
 
